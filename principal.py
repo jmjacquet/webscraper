@@ -85,15 +85,16 @@ if (dh_status_code == 200)and(cedears_status_code==200):
 			dif = round(dh_pcompra-valor_dlr,2)
 		l.update({'diferencia':dif})
 	
-	lista_final = [x for x in lista if (x['diferencia']>0)and(x['diferencia']<150)and(x['ratio']>1)]	
-	lista_final = sorted(lista_final,key= lambda x: x['diferencia'],reverse=True)[:50]
-	from pprint import pprint
-	pprint(lista_final)
+	#lista_final = [x for x in lista if (x['diferencia']>0)and(x['diferencia']<150)and(x['ratio']>1)]	
+	lista_final = sorted(lista,key= lambda x: x['diferencia'],reverse=True)
+	from pprint import pprint	
 
 
+	ticket = input("Nombre del Ticket? ")
 
-
-
+	if ticket:
+		resultado = [x for x in lista_final if x['name']==ticket]
+		pprint(resultado)
 	# valor_pesos = round((valor['precio'] / accion_valor)*ratio_num,2)
 	# print(f"Valor Compra Acción: ${valor_pesos} vs Valor Dólar CCL: ${dh_pventa}")
 	# dif = round(valor_pesos-dh_pventa,2)
