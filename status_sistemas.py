@@ -17,10 +17,9 @@ class style():
     RESET = '\033[0m'
 
 
-listado = [dict(url="http://boletas.cotoer.com.ar/login/",sistema="Colegios Terapistas"),
-			dict(url="http://boletas.inmogroup.com.ar/login/",sistema="Consorcios"),
-			dict(url="http://sucec.ironweb.com.ar/login/",sistema="IronWEB"),
-			dict(url="http://prueba.ironweb.com.ar/login/",sistema="IronWEB Prueba"),
+listado = [dict(url="http://cotoer.autogestorweb.com.ar/login/",sistema="Colegios Terapistas"),
+			dict(url="http://inmogroup.autogestorweb.com.ar/login/",sistema="Consorcios"),
+			dict(url="http://prueba.ironweb.com.ar/login/",sistema="IronWEB"),
 			dict(url="https://sistemaslaboralsalud.com.ar/login/",sistema="LaboralSalud"),
 			]
 
