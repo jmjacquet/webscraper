@@ -78,47 +78,17 @@
 
 
 # print(solution(826))
-
-import json
-
-if __name__ == '__main__':
-
-	a="arrb6???4xxbl5???eee5"
-	b="acc?7??sss?3rr1??????5"
-	c="5??aaaaaaaaaaaaaaaaaaa?5?5"
-	d="9???1???9???1???9"
-	e="aa6?9"
-
-	def is_pair(n):
-		try:
-			n=int(n)
-			return (n%2==0)
-		except:
-			return False
-		
-
-	def existe(a):
-		words=a.split('???')
-		cant=len(words)
-		result=False
-		for i,w in enumerate(words):
-			
-			if i==0:
-				continue
-			elif i < cant:
-				ant=words[i-1][-1]
-				pos=words[i][0]				
-				if is_pair(ant) and is_pair(pos):
-					return True
-		return result
-	
-	print(existe(a))
-
-
-	#print(words)
+def front_times(str, n):
+	if len(str)<3:
+		return str*n
+	else:
+		print
+		str[:3]*n
 
 
 
+print(front_times('Hi',2))
+print(front_times('Chocolate',2))
     
     # print('Welcome to the birthday dictionary. We know the birthdays of:')
     # for l in birthdays:

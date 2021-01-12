@@ -1,0 +1,21 @@
+We started by mak
+At a high-level, we need to support two scenarios, one to upload photos and the other to view/search photos.ing Desktop based systems (using Delphi 10 and FirebirdDB), and it seemed like a good idea to start innovating 
+and migrating the developed systems to web technologies.
+I dabbled in PHP but as I got into python (which I think it's great) I started developing the core systems on Django. 
+For that I put together a group within the development sector to migrate each of the systems, implementing different technologies according to each case (API Rest, GIS, File Processing in Process Queue, etc). 
+Always implementing UnitTest, coverage, Selenium and versioning using GIT. 
+Then the next step was to decentralize the development server and start to dockerize the different services (database, production server, redis,celery, etc.) 
+in order to speed up development.
+We currently have systems running in Python 2.7 /Django 1.11 and Python3 with Django 2.2, therefore we had to implement several changes 
+along the way in said code, the dockerization of the services used being eseential to be able to handle the different versions (Python 2/3) without problems, libraries and development Environments (Env).
+I was also in charge of the search, installation and commissioning of production servers such as Apache + mod_wsgi and NGINX + uWSGI using an online VPS (Webfaction/DigitalOcean).
+I currently lead this team and we are migrating and developing new versions and functionalities to existing systems.
+
+API Rest interface for TaDeSe Management System (api rest).
+Control and Analysis of Absenteeism for Occupational Medicine.(graphs, using queue processing in celery for files)
+ONLine Billing, Electronic Invoice (AFIP - Atgentinian Tax Agency) and Stock control for Small Bussiness.
+Management of Income / Suppliers / Charges / Social Aid for the
+Chamber of Deputies of the Province of Santa Fé.
+Management of Enrolled for Schools of Occupational Therapists of Rosario/Santa Fe/Entre Ríos.
+Management of Consortia and Closed Neighborhoods / Countries.
+Query and Printing of the Register of Volunteer Firefighters of the Province of Santa Fe.
