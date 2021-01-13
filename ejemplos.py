@@ -78,17 +78,17 @@
 
 
 # print(solution(826))
-def front_times(str, n):
-	if len(str)<3:
-		return str*n
-	else:
-		print
-		str[:3]*n
+# def front_times(str, n):
+# 	if len(str)<3:
+# 		return str*n
+# 	else:
+# 		print
+# 		str[:3]*n
 
 
 
-print(front_times('Hi',2))
-print(front_times('Chocolate',2))
+# print(front_times('Hi',2))
+# print(front_times('Chocolate',2))
     
     # print('Welcome to the birthday dictionary. We know the birthdays of:')
     # for l in birthdays:
@@ -104,4 +104,8 @@ print(front_times('Chocolate',2))
     #     print('Sadly, we don\'t have {}\'s birthday.'.format(name))
 
 
+def spin_words(sentence):
+    s=' '.join(map(lambda x: x if len(x)<5 else x[::-1], sentence.split()))
+    return s
 
+print(spin_words("This is another test"))
