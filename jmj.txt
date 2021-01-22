@@ -19,3 +19,8 @@ Chamber of Deputies of the Province of Santa Fé.
 Management of Enrolled for Schools of Occupational Therapists of Rosario/Santa Fe/Entre Ríos.
 Management of Consortia and Closed Neighborhoods / Countries.
 Query and Printing of the Register of Volunteer Firefighters of the Province of Santa Fe.
+
+
+
+Hi how are you? I'm JuanManuel and i am a web developer focused primarily on Django. Currently working in a small colpany located in Santa Fe Argentina, in charge of the entire company's webapp development division. We develop dynamic sites and web based systems (Django/MySql/Apache Stack mostly), microservices and APIS for other companies.
+Im looking for jobs in Spain because im interested in moving permanently over there (i'll have the european passport soon). It would be a great challenge (love the hard work) and hopely we will meet soon.

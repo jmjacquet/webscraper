@@ -104,8 +104,7 @@
     #     print('Sadly, we don\'t have {}\'s birthday.'.format(name))
 
 
-def spin_words(sentence):
-    s=' '.join(map(lambda x: x if len(x)<5 else x[::-1], sentence.split()))
-    return s
+tup = [('saket', 10), ('tony', 5), ('steve', 20), ('bahubali', 15)] 
 
-print(spin_words("This is another test"))
+tup.sort(key=lambda x: x[1])
+print(tup)
