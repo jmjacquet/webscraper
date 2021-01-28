@@ -104,8 +104,43 @@
     #     print('Sadly, we don\'t have {}\'s birthday.'.format(name))
 
 
-def spin_words(sentence):
-    s=' '.join(map(lambda x: x if len(x)<5 else x[::-1], sentence.split()))
-    return s
+# def spin_words(sentence):
+#     s=' '.join(map(lambda x: x if len(x)<5 else x[::-1], sentence.split()))
+#     return s
 
-print(spin_words("This is another test"))
+# print(spin_words("This is another test"))
+
+matrix = [[2,3,4],[5,9,8],[7,2,1]]
+
+def minCost(matrix,m,n):
+    mincostp = [[0 for x in range(n+1)] for y in range(m+1)]
+    mincostp[0][0] = matrix[0][0]   
+    print(mincostp[0][0])
+    #LLeno los bordes izq(1er columna n) y superior (1er columna m)
+    for i in range(1,m+1):
+         costo_sup = mincostp[i-1][0]
+         mincostp[i][0] = costo_sup + matrix[i][0]
+
+    for j in range(1,n+1):
+         costo_izq = mincostp[0][j-1]
+         mincostp[0][j] = costo_izq + matrix[i][0]
+
+    for i in range (1,m+1):
+        for j in range(1,n+1):
+            costo_izq = mincostp[i-1][j]
+            costo_sup = mincostp[i][j-1]
+            #costo_diag = mincostp[i-1][j-1]
+
+            mincostp[i][j]= matrix[i][j]+min(costo_izq,costo_sup)
+            print(f'{mincostp[i][j]}->')
+    print(mincostp)
+    return mincostp[m][n]
+
+print(minCost(matrix,2,2))
+
+
+
+
+
+
+
