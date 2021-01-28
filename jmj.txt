@@ -20,6 +20,12 @@ Management of Consortia and Closed Neighborhoods / Countries.
 Query and Printing of the Register of Volunteer Firefighters of the Province of Santa Fe.
 
 
+
 WHY? I'm really hoping to join you. First of all because of the latest technollogies that youre working with
 and second but not lesser, your work enviroment, I have a friend there and he told me how you work and the
 technollogies echosystem that you have there.
+
+
+Hi how are you? I'm JuanManuel and i am a web developer focused primarily on Django. Currently working in a small colpany located in Santa Fe Argentina, in charge of the entire company's webapp development division. We develop dynamic sites and web based systems (Django/MySql/Apache Stack mostly), microservices and APIS for other companies.
+Im looking for jobs in Spain because im interested in moving permanently over there (i'll have the european passport soon). It would be a great challenge (love the hard work) and hopely we will meet soon.
+
